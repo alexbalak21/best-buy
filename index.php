@@ -17,7 +17,10 @@ require_once "components/router.php";
 include_once "views/blocks/nav.php";
 ?>
     </ul>
-    <header><h1>HEADER</h1></header>
+    <header>
+    <h1>HEADER</h1>
+    <a href="?page=products">Pordcuts</a>
+    </header>
     <main>
 
     <?php

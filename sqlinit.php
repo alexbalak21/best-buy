@@ -21,7 +21,6 @@ function db_connect()
     }
 }
 
-
 function create_table_fav()
 {
     db_connect();
@@ -35,7 +34,6 @@ function create_table_fav()
     echo "<br>TABLE FAV CREATED SUCCESSFULLY";
     $pdo = null;
 }
-
 
 function create_table_products()
 {
@@ -53,12 +51,11 @@ function create_table_products()
     `sold` BOOLEAN NOT NULL DEFAULT FALSE,
     `post_date` DATE NULL DEFAULT NULL,
     `sell_date` DATE NULL DEFAULT NULL
-      )";
+    )";
     $pdo->exec($sql);
     echo "<br>TABLE PRODUCTS CREATED SUCCESSFULLY";
     $pdo = null;
 }
-
 
 function create_table_users()
 {
@@ -78,5 +75,6 @@ function create_table_users()
     $pdo = null;
 }
 
-
-
+create_table_users();
+create_table_products();
+create_table_fav();

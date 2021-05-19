@@ -16,8 +16,6 @@ footer {
 }
 main {
   border: 1px solid green;
-  display: flex;
-  flex-wrap: wrap;
   max-width: 1600px;
   min-height: 1000px;
   margin: 0 auto 0 auto;
@@ -88,4 +86,24 @@ main > * {
 
 .inputError {
   border: 2px solid red;
+}
+
+.card {
+  text-align: center;
+  width: 250px;
+  height: 320px;
+  border: 2px solid blue;
+}
+
+.card img {
+  width: 200px;
+}
+.title {
+  text-align: center;
+}
+
+.productsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

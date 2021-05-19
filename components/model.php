@@ -62,8 +62,7 @@ function checkUserPass($email, $password)
     }
 }
 
-
-function addProduct($userID, $name, $category, $price, $description, $img='porduct.png')
+function addProduct($userID, $name, $category, $price, $description, $img = 'porduct.png')
 {
     $img_json = json_encode($img, true);
     db_connect();
@@ -85,7 +84,7 @@ function getAll($table = 'products')
 {
     db_connect();
     global $pdo;
-    $sql = sprintf("SELECT * FROM %s", $table);
+    $sql = sprintf("SELECT * FROM $table");
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
